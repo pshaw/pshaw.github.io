@@ -3,14 +3,14 @@
 <head>
 <title>Peter T. Shaw</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
 
-body {
-  background: none;
-  padding: 20px 50px;
+body, div, p, h1 {
   font-family: 'Montserrat', sans-serif;
   color: #666666;
   font-size: 18pt;
+  margin: 10px;
 }
 
 h1 {
@@ -19,24 +19,37 @@ h1 {
   font-size: 36pt;
 }
 
-div {
+.content {
   max-width: 600px;
+}
+
+.profile {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 </style>
 </head>
 <body>
 
-<div>
-<h1>
-Pete Shaw
-</h1>
-<img src="pic.jpg"></img>
-<p>I work on natural language understanding and machine learning at Google NYC.</p>
-<p>More coming soon...</p>
-<p><a href="mailto:ptshaw2@gmail.com">e-mail</a></p>
-<p><a href="https://scholar.google.com/citations?user=SmGaQicAAAAJ">scholar</a></p>
-<p><a href="https://www.linkedin.com/pub/peter-shaw/46/563/591">linkedin</a></p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-7">
+      <h1>
+      Pete Shaw
+      </h1>
+      <p>I'm currently a senior software engineer at Google NYC, working on natural language understanding and machine learning.</p>
+      <p><a href="https://ai.google/research/people/105930">ai.google</a></p>
+      <p><a href="https://scholar.google.com/citations?user=SmGaQicAAAAJ">scholar</a></p>
+      <p><a href="https://www.linkedin.com/pub/peter-shaw/46/563/591">linkedin</a></p>
+      <p><a href="mailto:ptshaw2@gmail.com">e-mail</a></p>    
+    </div>
+    <div class="col-xs-2">
+      <img src="pic.jpg" class="profile"></img>
+    </div>
+  </div>
 </div>
 
 </body>
