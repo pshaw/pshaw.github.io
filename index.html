@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,51 +7,214 @@
 <link href="bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
 
+
 body, div, p, h1 {
   font-family: 'Montserrat', sans-serif;
-  color: #666666;
-  font-size: 18pt;
-  margin: 10px;
+  color: #555555;
+  font-size: 12pt;
+}
+
+h1, h2, h3 {
+  color: #333333;
 }
 
 h1 {
-  color: #333333;
-  font-weight: normal;
-  font-size: 36pt;
+  font-size: 18pt;
 }
 
-.content {
-  max-width: 600px;
+h2 {
+  font-size: 18pt;
+}
+
+h3 {
+  font-size: 14pt;
 }
 
 .profile {
-  margin-top: 30px;
-  margin-left: 10px;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.jumbotron {
+  padding: 80px 0 10px 0;
+  background-color: #f1f5f8;
+  font-size: 14pt;
+}
+
+.authors {
+  font-size: 10pt;
+}
+
+.details {
+  font-size: 10pt;
+  color: #777777;
+}
+
+.bg-dark {
+  background-color: #334456!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.8)!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255,1.0)!important;
 }
 
 </style>
 </head>
 <body>
 
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
+<main role="main">
 
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-2">
+          <img src="pic.jpg" class="profile"></img>
+        </div>
+        <div class="col-sm-9 col-md-8 col-lg-8">
+          <h1>
+          Peter Shaw
+          </h1>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-7">
-      <h1>
-      Peter Shaw
-      </h1>
-        <p>I am currently a Staff Research Scientist on the <a href="https://research.google/teams/brain/">Google Brain</a> team in Seattle. I focus on research related to machine learning and natural language understanding, and its application to Google’s products such as Search and Assistant.</p>
-        <p>You can find my published work on <a href="https://scholar.google.com/citations?user=SmGaQicAAAAJ">Google Scholar</a>.</p>
-    </div>
-    <div class="col-xs-2">
-      <img src="pic.jpg" class="profile"></img>
+            <p>Staff Research Scientist at <a href="https://deepmind.google/">Google DeepMind</a></p>
+
+            
+            <p>
+              <a href="https://scholar.google.com/citations?user=SmGaQicAAAAJ">Google Scholar</a> &#x00b7; <a href="https://twitter.com/ptshaw2">Twitter</a> &#x00b7; <a href="https://www.linkedin.com/in/peter-shaw-59156346">LinkedIn</a></p>
+
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-10">
+        <h2 id="publications">Publications</h2>
+        <p>
+          <a href="https://arxiv.org/abs/2306.00245" target="_blank">From Pixels to UI Actions: Learning to Follow Instructions via Graphical User Interfaces</a> <br />
+          <span class="authors">Peter Shaw<sup>*</sup>, Mandar Joshi<sup>*</sup>, James Cohan, Jonathan Berant, Panupong Pasupat, Hexiang Hu, Urvashi Khandelwal, Kenton Lee, Kristina Toutanova</span><br />
+          <span class="details">NeurIPS 2023 (Spotlight) &#x00b7; <a href="https://github.com/google-deepmind/pix2act">Code</a> </span>
+        </p>        
+        <p>
+          <a href="https://aclanthology.org/2023.acl-long.784/" target="_blank">QUEST: A Retrieval Dataset of Entity-Seeking Queries with Implicit Set Operations</a> <br />
+          <span class="authors">Chaitanya Malaviya, Peter Shaw, Ming-Wei Chang, Kenton Lee, Kristina Toutanova</span><br />
+          <span class="details">ACL 2023 &#x00b7; <i>Outstanding Paper Award</i> &#x00b7; <a href="https://github.com/google-research/language/tree/master/language/quest">Code</a> &#x00b7; <a href="https://research.google/resources/datasets/quest/">Dataset</a></span>
+        </p>        
+        <p>
+          <a href="https://arxiv.org/abs/2210.03347" target="_blank">Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding</a> <br />
+          <span class="authors">Kenton Lee<sup>*</sup>, Mandar Joshi<sup>*</sup>, Iulia Turc, Hexiang Hu, Fangyu Liu, Julian Eisenschlos, Urvashi Khandelwal, Peter Shaw, Ming-Wei Chang, Kristina Toutanova</span><br />
+          <span class="details">ICML 2023 &#x00b7; <a href="https://github.com/google-research/pix2struct">Code</a></span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2022.coling-1.438/" target="_blank">Generate-and-Retrieve: use your predictions to improve retrieval for semantic parsing</a> <br />
+          <span class="authors">Yury Zemlyanskiy, Michiel de Jong, Joshua Ainslie, Panupong Pasupat, Peter Shaw, Linlu Qiu, Sumit Sanghai, Fei Sha</span><br />
+          <span class="details">COLING 2022</span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2022.emnlp-main.624/" target="_blank">Evaluating the Impact of Model Scale for Compositional Generalization in Semantic Parsing</a> <br />
+          <span class="authors">Linlu Qiu, Peter Shaw, Panupong Pasupat, Tianze Shi, Jonathan Herzig, Emily Pitler, Fei Sha, Kristina Toutanova</span><br />
+          <span class="details">EMNLP 2022</span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2022.naacl-main.323/" target="_blank">Improving Compositional Generalization with Latent Structure and Data Augmentation</a> <br />
+          <span class="authors">Linlu Qiu<sup>*</sup>, Peter Shaw<sup>*</sup>, Panupong Pasupat, Paweł Krzysztof Nowak, Tal Linzen, Fei Sha, Kristina Toutanova</span><br />
+          <span class="details">NAACL 2022 &#x00b7; <a href="https://github.com/google-research/language/tree/master/language/compgen/csl">Code</a></span>
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2111.05013" target="_blank">Learning to Generalize Compositionally by Transferring Across Semantic Parsing Tasks</a> <br />
+          <span class="authors">Wang Zhu, Peter Shaw, Tal Linzen, Fei Sha</span><br />
+          <span class="details">arXiv 2021</span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2021.findings-emnlp.20/" target="_blank">Visually Grounded Concept Composition</a> <br />
+          <span class="authors">Bowen Zhang, Hexiang Hu, Linlu Qiu, Peter Shaw, Fei Sha</span><br />
+          <span class="details">EMNLP 2021 (Findings)</span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2021.emnlp-main.166/" target="_blank">Systematic Generalization on gSCAN: What is Nearly Solved and What is Next?</a> <br />
+          <span class="authors">Linlu Qiu, Hexiang Hu, Bowen Zhang, Peter Shaw, Fei Sha</span><br />
+          <span class="details">EMNLP 2021 &#x00b7; <a href="https://github.com/google-research/language/tree/master/language/gscan/xattn_model">Code</a></span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2021.findings-emnlp.341/" target="_blank">Graph-Based Decoding for Task Oriented Semantic Parsing</a> <br />
+          <span class="authors">Jeremy Cole, Nanjiang Jiang, Panupong Pasupat, Luheng He, Peter Shaw</span><br />
+          <span class="details">EMNLP 2021 (Findings)</span>
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2104.07478" target="_blank">Unlocking Compositional Generalization in Pre-trained Models Using Intermediate Representations</a> <br />
+          <span class="authors">Jonathan Herzig, Peter Shaw, Ming-Wei Chang, Kelvin Guu, Panupong Pasupat, Yuan Zhang</span><br />
+          <span class="details">arXiv 2021 &#x00b7; <a href="https://github.com/google-research/language/tree/master/language/compir">Code</a></span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2021.acl-long.75/" target="_blank">Compositional Generalization and Natural Language Variation: Can a Semantic Parsing Approach Handle Both?</a> <br />
+          <span class="authors">Peter Shaw, Ming-Wei Chang, Panupong Pasupat, Kristina Toutanova</span><br />
+          <span class="details">ACL 2021 &#x00b7; <a href="https://github.com/google-research/language/tree/master/language/compgen/nqg">Code</a></span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/2020.acl-main.742/" target="_blank">Exploring Unexplored Generalization Challenges for Cross-Database Semantic Parsing</a> <br />
+          <span class="authors">Alane Suhr, Ming-Wei Chang, Peter Shaw, Kenton Lee</span><br />
+          <span class="details">ACL 2020 &#x00b7; <a href="https://github.com/google-research/language/tree/master/language/xsp">Code</a></span> 
+        </p>
+        <p>
+          <a href="https://aclanthology.org/D19-1603/" target="_blank">Answering Conversational Questions on Structured Data without Logical Forms</a> <br />
+          <span class="authors">Thomas Mueller, Francesco Piccinno, Peter Shaw, Massimo Nicosia, Yasemin Altun</span><br />
+          <span class="details">EMNLP 2019</span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/P19-1010/" target="_blank">Generating Logical Forms from Graph Representations of Text and Entities</a> <br />
+          <span class="authors">Peter Shaw, Philip Massey, Angelica Chen, Francesco Piccinno, Yasemin Altun</span><br />
+          <span class="details">ACL 2019</span>
+        </p>
+        <p>
+          <a href="https://aclanthology.org/N18-2074/" target="_blank">Self-Attention with Relative Position Representations</a> <br />
+          <span class="authors">Peter Shaw, Jakob Uszkoreit, Ashish Vaswani</span><br />
+          <span class="details">NAACL 2018 &#x00b7; <a href="https://paperswithcode.com/paper/self-attention-with-relative-position">Code</a></span>
+        </p>
+
+        
+        <p class="details"><sup>*</sup> indicates equal contribution.</p>
+        <hr />
+
+        <h2 id="about">About</h2><a rel="about"></a>
+
+        <p>Broadly, my research focuses on machine learning. I have worked on evaluating and improving generalization in neural models, developing retrieval-augmented systems, and combining neural models with structured components and environments.
+
+        <p>Previously, I worked on query understanding for Google Search, where I led the development and deployment of neural models for semantic parsing. Before joining Google in 2015, I was the technical lead and manager of the embedded software team at <a href="https://techcrunch.com/2013/06/19/stratasys-acquiring-makerbot-combined-company-will-likely-dominate-3d-printing-industry/">MakerBot</a>, developing 3D printers and scanners. I graduated <i>summa cum laude</i> from Villanova University with a combined Bachelor's and Master's in Electrical Engineering.
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="bootstrap.min.js"></script>
 
 </body>
 </html>
